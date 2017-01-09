@@ -802,7 +802,7 @@ We can do most of our mobile testing in the web browser.  However, anything that
 
 To test in the browser we will be using the ionic serve command which compile the sass file, starts up a node based web server with livereload, and launches your default web browser (Chrome is suggested).
 
-To run the ionic serve we will be using the Visual Studio NPM Task Runner extension that we installed earlier.  There are 2 npm commands that have been added to the package.json file for the AppReadyApp to launch the ionic serve process:
+To run the ionic serve we will be using the Visual Studio NPM Task Runner extension that we installed earlier.  There are 2 npm commands that have been added to the package.json file for the HexaDotApp to launch the ionic serve process:
 
 1. ionic-serve -> starts up the server, open the default browser and navigates to the mobile app view. You can still get to the ionic-lab page that ionic-lab launches.
 1. ionic-lab -> same as the ionic serve but the start up page is the ionic-lab page that shows a side by side view of Android and iOS.
@@ -859,7 +859,7 @@ By default when you install the Visual Studio Tooling for Apache Cordova, it dow
 
 Changing the Api Url requires a coding change.
 
-1. In the AppReadyApp project, open the www\services\backend.service.js file
+1. In the HexaDotApp project, open the www\services\backend.service.js file
 1. Change the protocol from http:// to https://
 1. Change the domainUrl variable from localhost:48408 to hexadot-d.azurewebsites.net
 1. Save the file
@@ -908,7 +908,7 @@ The first time that you launch a Visual Studio Emulator for Android device it wi
 
 Changing the Api Url requires a coding change.
 
-1. In the AppReadyApp project, open the www\services\backend.service.js file
+1. In the HexaDotApp project, open the www\services\backend.service.js file
 1. Change the protocol from http:// to https://
 1. Change the domainUrl variable from localhost:48408 to hexadot-d.azurewebsites.net
 1. Save the file
