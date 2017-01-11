@@ -1,0 +1,3 @@
+﻿#Initially just disallowing views that don't make sense, leaving others.
+User-Agent: *
+Disallow: /Account

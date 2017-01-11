@@ -12,14 +12,14 @@ This repo contains the code for **HexaDot**, an open-source solution focused on 
 
 ##Project overview
 
-The initial launch of development for HexaDot started on Jan 01, 2017.
+The initial launch of development for HexaDot started on Decmber, 2016.
 
 ##How you can help
 To help make improvements to this project, you can just clone this repository and start coding, testing, and/or designing. 
 
 Before jumping in, please review the solution architecture and instructions below to [get started](#solution-architecture).
 
-we are focused on expanding and filling out our documentation, issues lists, milestones plan and supporting any issues that arise from community engagement with the codebase.  Additionally, you willl find issues of all types (simple bugs, new feature & requirements and architectural updates) upon which you can contribute to the project.  In the meantime, if you find any issues with the codebase or other content in our repository please log an issue and we will work with you to solve it.
+we are focused on expanding and filling out our documentation, issues lists, milestones plan and supporting any issues that arise from community engagement with the codebase.  Additionally, you will find issues of all types (simple bugs, new feature & requirements and architectural updates) upon which you can contribute to the project.  In the meantime, if you find any issues with the codebase or other content in our repository please log an issue and we will work with you to solve it.
 
 Thank you for considering supporting this open source project for research.
 
