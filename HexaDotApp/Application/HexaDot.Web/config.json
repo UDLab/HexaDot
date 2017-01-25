@@ -7,14 +7,14 @@
     "DefaultAdminUsername": "Administrator@example.com",
     "DefaultAdminPassword": "YouShouldChangeThisPassword1!",
     "DefaultUsername": "User@example.com",
-    "DefaultOrganizationUsername": "organization@example.com",
+    "DefaultInstituteUsername": "institute@example.com",
     "DefaultFromEmailAddress": "Administrator@example.com",
     "DefaultFromDisplayName": "HexaDot.com Administrator",
     "InsertSampleData": "true",
     "InsertTestUsers": "true"
   },
   "General": {
-    "SiteBaseUrl": "http://localhost:48408/",
+    "SiteBaseUrl": "http://localhost:48410/",
     "DefaultTimeZone": "Central Standard Time"
   },
   "ApplicationInsights": {

@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "HexaDot.Data": "1.0.0-*",
+    "MediatR": "2.1.0"
+    //"MediatR.Extensions.Microsoft.DependencyInjection": "1.0.1"
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.3"
+        }
+      },
+      "imports": [
+        "dnxcore50",
+        "portable-net451+win8"
+      ]
+    }
+  }
+}
