@@ -1,0 +1,72 @@
+@model IEnumerable<HexaDot.Data.ViewModels.Institute.InstituteSummaryViewModel>
+
+@{
+    ViewData["Title"] = "Currently active organizations";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>@ViewData["Title"]</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="btn-group btn-group-sm row-btn-margin">
+            <a data-toggle="tooltip" data-placement="top" id="CreateNew" title="Create New" href="@Url.Action("Create", "Institute")" class="btn btn-default"><span class="fa fa-plus"></span>&nbsp; Create Institute</a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-responsive table-condensed">
+            <tr>
+                <th class="col-md-1">Action
+                </th>
+                <th class="col-md-3">
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th class="col-md-3">
+                    @Html.DisplayNameFor(model => model.WebUrl)
+                </th>
+                <th class="col-md-4">
+                    Logo
+                </th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <div class="row-btn-margin btn-toolbar">
+                            <a data-toggle="tooltip" data-placement="top" title="Edit" href="@Url.Action("Edit", "Institute", new {id = item.Id})" class="btn btn-sm btn-success"><span class="fa fa-edit"></span></a>
+                            &nbsp; <a data-toggle="tooltip" data-placement="top" title="Delete" href="@Url.Action("Delete", "Institute", new { id = item.Id })" class="btn btn-sm  btn-danger"><span class="fa fa-remove"></span></a>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="@Url.Action("Details", "Institute", new { id = item.Id })">@item.Name</a>
+                    </td>
+                    <td>
+                        <a href=@item.WebUrl target="_blank">@item.WebUrl</a>
+                    </td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(item.LogoUrl))
+                        {
+                            <a href="@Url.Action("Details", "Institute", new {id = item.Id})">
+                                <img src="@item.LogoUrl" alt="@item.Name" class="lister-logo" />
+                            </a>
+                        }
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
+
+@section scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip({ container: 'body' });
+        });
+    </script>
+}
