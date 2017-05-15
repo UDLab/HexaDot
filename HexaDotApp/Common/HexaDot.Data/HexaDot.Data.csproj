@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyName>HexaDot.Data</AssemblyName>
+    <PackageId>HexaDot.Data</PackageId>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50;portable-net451+win8</PackageTargetFallback>
+    <RuntimeFrameworkVersion>1.0.4</RuntimeFrameworkVersion>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HexaDot.Core\HexaDot.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="1.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.0.0">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
